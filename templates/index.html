@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Web Terminal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>Python Web Terminal</h2>
+        <form method="POST">
+            <input type="text" name="command" placeholder="Enter command or plain English" autofocus>
+            <button type="submit">Run</button>
+        </form>
+        <div class="output">
+            {% for line in history %}
+                <p>{{ line }}</p>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

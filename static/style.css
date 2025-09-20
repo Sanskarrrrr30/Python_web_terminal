@@ -1,0 +1,36 @@
+body {
+    font-family: monospace;
+    background: #1e1e1e;
+    color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+.container {
+    width: 80%;
+    max-width: 800px;
+}
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    background: #2d2d2d;
+    border: none;
+    color: white;
+}
+button {
+    padding: 10px 20px;
+    background: #4caf50;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.output {
+    margin-top: 20px;
+    background: #2d2d2d;
+    padding: 15px;
+    border-radius: 5px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+p { margin: 5px 0; }
